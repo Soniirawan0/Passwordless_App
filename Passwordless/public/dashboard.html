@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - FIDO2 Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    h1 { color: #2c3e50; }
+    #info {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+    }
+    button {
+      margin-top: 20px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏠 Dashboard</h1>
+  <div id="info">Memuat informasi pengguna...</div>
+  <button onclick="logout()">🚪 Logout</button>
+
+  <script>
+    async function loadSession() {
+      const res = await fetch("/session");
+      const data = await res.json();
+
+      const infoEl = document.getElementById("info");
+      if (data.loggedIn) {
+        infoEl.innerHTML = `
+          <b>👤 Username:</b> ${data.user}<br>
+          <b>🔢 Jumlah Login:</b> ${data.loginCount}<br>
+          <b>🕒 Terakhir Login:</b> ${new Date(data.lastLogin).toLocaleString()}
+        `;
+      } else {
+        infoEl.innerHTML = "<span style='color:red'>Anda belum login.</span>";
+        setTimeout(() => { window.location.href = "/"; }, 2000);
+      }
+    }
+
+    async function logout() {
+      await fetch("/logout");
+      window.location.href = "/";
+    }
+
+    loadSession();
+  </script>
+</body>
+</html>
