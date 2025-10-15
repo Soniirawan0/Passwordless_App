@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1:1760459735275",
+    "username": "1",
+    "credentials": [
+      {
+        "credId": "GBXxiVb_W1K1rb-URywEhA",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEervrl7mBt8kNeScl5hJbEkYTCbhx\nAtP+JtHCCWvjmY8uAtg12wpaYLGBNLDCH26LEP9YCLAxyVct18ybv8fkCQ==\n-----END PUBLIC KEY-----\n",
+        "counter": 0
+      }
+    ],
+    "loginCount": 7,
+    "lastLogin": "2025-10-15T20:42:45.439Z",
+    "pending": false,
+    "currentChallenge": "7uFD9dOmZKxuH4I-mSeaV84cQF-vUGMehMLYIcHJTQBUKx1pUmVb54vVthqAXE9pCaTv7cinoUtV9bnMRIEPhQ"
+  },
+  {
+    "id": "2:1760459772636",
+    "username": "2",
+    "credentials": [
+      {
+        "credId": "3WtO7C8SZiCrACnKzRz9uqnRJZRgFiDOnKNw7H9Ugks",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9hGA42IYOnMiyvsv8eF5j1pB34hj\nrqdqdrxJiSNZe/tqixHmEuZv2wkoj4/SjyANU87yLoLlKSyIa9RYdOvDsw==\n-----END PUBLIC KEY-----\n",
+        "counter": 0
+      }
+    ],
+    "loginCount": 4,
+    "lastLogin": "2025-10-15T20:44:47.107Z",
+    "pending": false,
+    "currentChallenge": "h1xcP35FHDWxJyLWODsw1u0O-M8s_7EjEPRpYqFTpC3V68JufV3M8Ktr7LyTFmOJh7sr5vGPser1icbuHfKFpQ"
+  },
+  {
+    "id": "soni:1760461920227",
+    "username": "soni",
+    "credentials": [
+      {
+        "credId": "9j5w2v4odvJthDxGGESqYg",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDE44m3K1k7fuafiSO71kVWbD22SB\njrJHYuiDDpljaazDqwG/mbQnD2VN5hrLoE7G33s3IZmhnBNerkZ2eD/dGQ==\n-----END PUBLIC KEY-----\n",
+        "counter": 0
+      }
+    ],
+    "loginCount": 1,
+    "lastLogin": "2025-10-14T17:12:54.202Z",
+    "pending": false,
+    "currentChallenge": "9I61xU257sfvkXEu-TEgfNb9MRx0pQS--PTU-iY0_NkSQV37ugDKBeJdDoIzgwzYUnn9UdF8uvoZW6E61CURCQ"
+  }
+]
